@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>我的第一篇博客 | 刘雪荣的个人博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+        <meta name="keywords" content="博客 总结" />
+    
+    <meta name="description" content="Git笔记使用命令+文字描述以下过程：实现在桌面中创建一个git项目，在项目中添加文件，并提交到本地仓库的操作步骤mkdir appcd appgit init    //只能对当前文件夹进行初始化操作touch 1.htmlgit add .git commit -m 添加了1.html文件    //–&amp;gt;备注信息一定要写，如果忘了写备注信息，会进入vi编辑器，输入备注信息并保存退出，才能">
+<meta name="keywords" content="博客 总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的第一篇博客">
+<meta property="og:url" content="https://github.com/liuxuerong/liuxuerong.github.io/2017/06/27/my-new-post/index.html">
+<meta property="og:site_name" content="刘雪荣的个人博客">
+<meta property="og:description" content="Git笔记使用命令+文字描述以下过程：实现在桌面中创建一个git项目，在项目中添加文件，并提交到本地仓库的操作步骤mkdir appcd appgit init    //只能对当前文件夹进行初始化操作touch 1.htmlgit add .git commit -m 添加了1.html文件    //–&amp;gt;备注信息一定要写，如果忘了写备注信息，会进入vi编辑器，输入备注信息并保存退出，才能">
+<meta property="og:updated_time" content="2017-06-27T14:49:37.188Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我的第一篇博客">
+<meta name="twitter:description" content="Git笔记使用命令+文字描述以下过程：实现在桌面中创建一个git项目，在项目中添加文件，并提交到本地仓库的操作步骤mkdir appcd appgit init    //只能对当前文件夹进行初始化操作touch 1.htmlgit add .git commit -m 添加了1.html文件    //–&amp;gt;备注信息一定要写，如果忘了写备注信息，会进入vi编辑器，输入备注信息并保存退出，才能">
+    
+
+    
+        <link rel="alternate" href="/" title="刘雪荣的个人博客" type="application/atom+xml" />
+    
+
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/titillium-web/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.0.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+    
+    
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+    
+    
+    
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+    <div id="header-outer" class="outer">
+        <div class="container">
+            <div class="container-inner">
+                <div id="header-title">
+                    <h1 class="logo-wrap">
+                        <a href="/" class="logo"></a>
+                    </h1>
+                    
+                        <h2 class="subtitle-wrap">
+                            <p class="subtitle">技术与生活</p>
+                        </h2>
+                    
+                </div>
+                <div id="header-inner" class="nav-container">
+                    <a id="main-nav-toggle" class="nav-icon fa fa-bars"></a>
+                    <div class="nav-container-inner">
+                        <ul id="main-nav">
+                            
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/">主页</a>
+                                </li>
+                            
+                                        <ul class="main-nav-list"><li class="main-nav-list-item"><a class="main-nav-list-link" href="/categories/blog/">blog</a></li></ul>
+                                    
+                                <li class="main-nav-list-item" >
+                                    <a class="main-nav-list-link" href="/about/index.html">关于</a>
+                                </li>
+                            
+                        </ul>
+                        <nav id="sub-nav">
+                            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+        <div class="container">
+            <div class="main-body container-inner">
+                <div class="main-body-inner">
+                    <section id="main">
+                        <div class="main-body-header">
+    <h1 class="header">
+    
+    <a class="page-title-link" href="/categories/blog/">blog</a>
+    </h1>
+</div>
+                        <div class="main-body-content">
+                            <article id="post-my-new-post" class="article article-single article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+        我的第一篇博客
+        </h1>
+    
+
+            </header>
+        
+        
+            <div class="article-meta">
+                
+    <div class="article-date">
+        <a href="/2017/06/27/my-new-post/" class="article-date">
+            <time datetime="2017-06-27T14:42:11.000Z" itemprop="datePublished">2017-06-27</time>
+        </a>
+    </div>
+
+                
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/博客-总结/">博客 总结</a>
+    </div>
+
+            </div>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+            <h1 id="Git笔记"><a href="#Git笔记" class="headerlink" title="Git笔记"></a>Git笔记</h1><h2 id="使用命令-文字描述以下过程："><a href="#使用命令-文字描述以下过程：" class="headerlink" title="使用命令+文字描述以下过程："></a>使用命令+文字描述以下过程：</h2><h3 id="实现在桌面中创建一个git项目，在项目中添加文件，并提交到本地仓库的操作步骤"><a href="#实现在桌面中创建一个git项目，在项目中添加文件，并提交到本地仓库的操作步骤" class="headerlink" title="实现在桌面中创建一个git项目，在项目中添加文件，并提交到本地仓库的操作步骤"></a>实现在桌面中创建一个git项目，在项目中添加文件，并提交到本地仓库的操作步骤</h3><p>mkdir app<br>cd app<br>git init    //只能对当前文件夹进行初始化操作<br>touch 1.html<br>git add .<br>git commit -m 添加了1.html文件<br>    //–&gt;备注信息一定要写，如果忘了写备注信息，会进入vi编辑器，输入备注信息并保存退出，才能正确的提交<br>    //–&gt;-m 备注信息：一定要把-m和备注信息之间留有空格，否则将会提示 -m备注信息 这个选项不存在</p>
+<h3 id="在公司里面，我自己在github中创建了一个空仓库，为了把本地代码上传到这个仓库中，我应该执行哪些操作"><a href="#在公司里面，我自己在github中创建了一个空仓库，为了把本地代码上传到这个仓库中，我应该执行哪些操作" class="headerlink" title="在公司里面，我自己在github中创建了一个空仓库，为了把本地代码上传到这个仓库中，我应该执行哪些操作"></a>在公司里面，我自己在github中创建了一个空仓库，为了把本地代码上传到这个仓库中，我应该执行哪些操作</h3><p>mkdir app<br>cd app<br>git init    //只能对当前文件夹进行初始化操作<br>touch 1.html<br>git add .<br>git commit -m 添加了1.html文件<br>git push 服务器地址 master</p>
+<h3 id="最重要-在公司里面，领导让我对某个github的项目进行二次开发-2-次开发-，比如我要开发一个新功能-比如添加test-html文件-，我应该执行哪些步骤从而将test-html文件提交到服务器中"><a href="#最重要-在公司里面，领导让我对某个github的项目进行二次开发-2-次开发-，比如我要开发一个新功能-比如添加test-html文件-，我应该执行哪些步骤从而将test-html文件提交到服务器中" class="headerlink" title="(最重要)在公司里面，领导让我对某个github的项目进行二次开发(2+次开发)，比如我要开发一个新功能(比如添加test.html文件)，我应该执行哪些步骤从而将test.html文件提交到服务器中"></a>(最重要)在公司里面，领导让我对某个github的项目进行二次开发(2+次开发)，比如我要开发一个新功能(比如添加test.html文件)，我应该执行哪些步骤从而将test.html文件提交到服务器中</h3><p>//1、<br>mkdir app<br>cd app<br>git init<br>git pull 服务器仓库 master<br>touch 1.html<br>git add .<br>git commit -m 添加了1.html文件<br>git push 服务器地址 master</p>
+<p>//2、<br>git clone 服务器仓库地址 app2(本地文件夹名称)<br>cd app2<br>touch 1.html<br>git add .<br>git commit -m 添加了1.html文件<br>git push 服务器地址 master</p>
+<h3 id="如果当前位于cart分支，我需要将cart分支合并到master分支，我应该执行哪些操作"><a href="#如果当前位于cart分支，我需要将cart分支合并到master分支，我应该执行哪些操作" class="headerlink" title="如果当前位于cart分支，我需要将cart分支合并到master分支，我应该执行哪些操作"></a>如果当前位于cart分支，我需要将cart分支合并到master分支，我应该执行哪些操作</h3><ul>
+<li>git checkout master</li>
+<li>git merge cart -m 备注信息</li>
+</ul>
+<h2 id="命令默写"><a href="#命令默写" class="headerlink" title="命令默写"></a>命令默写</h2><h3 id="想要查看分支切换的操作日志，通过什么命令可以实现？"><a href="#想要查看分支切换的操作日志，通过什么命令可以实现？" class="headerlink" title="想要查看分支切换的操作日志，通过什么命令可以实现？"></a>想要查看分支切换的操作日志，通过什么命令可以实现？</h3><ul>
+<li>git reflog</li>
+</ul>
+<h3 id="版本回滚"><a href="#版本回滚" class="headerlink" title="版本回滚"></a>版本回滚</h3><ul>
+<li>git log –oneline：获取版本号</li>
+<li>git reset –hard 版本号</li>
+</ul>
+<h3 id="创建新分支"><a href="#创建新分支" class="headerlink" title="创建新分支"></a>创建新分支</h3><ul>
+<li>git branch 分支名</li>
+</ul>
+<h3 id="删除某个分支"><a href="#删除某个分支" class="headerlink" title="删除某个分支"></a>删除某个分支</h3><ul>
+<li>git branch -d 分支名</li>
+</ul>
+<h3 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h3><ul>
+<li>git checkout 分支名</li>
+</ul>
+<h3 id="分支合并"><a href="#分支合并" class="headerlink" title="分支合并"></a>分支合并</h3><ul>
+<li>git merge -m 备注信息</li>
+</ul>
+<h3 id="查看所有分支–-gt-并说明如何辨别当前位于哪个分支"><a href="#查看所有分支–-gt-并说明如何辨别当前位于哪个分支" class="headerlink" title="查看所有分支–&gt;并说明如何辨别当前位于哪个分支"></a>查看所有分支–&gt;并说明如何辨别当前位于哪个分支</h3><ul>
+<li>git branch</li>
+<li>带*号前缀的就是当前分支</li>
+</ul>
+<h2 id="Git补充"><a href="#Git补充" class="headerlink" title="Git补充"></a>Git补充</h2><h3 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h3><ul>
+<li><p>如果某个git仓库从来没有commit过，将不会产生分支</p>
+<ul>
+<li>git branch 不会有任何输出</li>
+</ul>
+</li>
+<li><p>(了解)分支仓库和master仓库只有在文件commit之后才会有反应</p>
+<ul>
+<li>当一个文件还位于工作区或者暂存区的时候，切换分支对该文件不会产生任何影响</li>
+<li>只有当该文件commit之后，在哪个分支仓库中commit，该文件就会出现在该分支仓库中</li>
+</ul>
+</li>
+</ul>
+<h3 id="git-init-文件夹名称：可以初始化指定的文件夹"><a href="#git-init-文件夹名称：可以初始化指定的文件夹" class="headerlink" title="git init 文件夹名称：可以初始化指定的文件夹"></a>git init 文件夹名称：可以初始化指定的文件夹</h3><h3 id="如果git-push的时候发现失败，可能就是产生了冲突"><a href="#如果git-push的时候发现失败，可能就是产生了冲突" class="headerlink" title="如果git push的时候发现失败，可能就是产生了冲突"></a>如果git push的时候发现失败，可能就是产生了冲突</h3><ul>
+<li>git pull：更新服务器代码，告诉你有文件冲突</li>
+<li>找到该文件，对该文件进行对比（通过tortoiseGit图形化工具：diff查看文件变化、edit conflicts编辑冲突的文件并保存）</li>
+<li>重新把该文件放到暂存区–&gt;commit，最后重新push到服务器仓库</li>
+</ul>
+<h3 id="git操作应该规范，不要进行一些反人类操作"><a href="#git操作应该规范，不要进行一些反人类操作" class="headerlink" title="git操作应该规范，不要进行一些反人类操作"></a>git操作应该规范，不要进行一些反人类操作</h3><ul>
+<li>设置用户名和邮箱，不要在提交代码之后重新修改了用户名和邮箱</li>
+<li>文件忽略：应该在创建该文件的时候，直接把它忽略掉，而不是先添加到仓库中，那样会很麻烦</li>
+<li>对一个项目二次开发，应该git clone要么git init+git pull</li>
+</ul>
+
+        </div>
+        <footer class="article-footer">
+            
+
+
+
+    <a data-url="https://github.com/liuxuerong/liuxuerong.github.io/2017/06/27/my-new-post/" data-id="cj4fov3c900009kl17yi3pqnb" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+<script>
+    (function ($) {
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+        </footer>
+    </div>
+</article>
+
+    <section id="comments">
+    
+        
+    <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </div>
+
+    
+    </section>
+
+
+                        </div>
+                    </section>
+                    <aside id="sidebar">
+    <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
+    <div class="sidebar-top">
+        <p>关注我 :</p>
+        <ul class="social-links">
+            
+                
+                <li>
+                    <a class="social-tooltip" title="twitter" href="/" target="_blank">
+                        <i class="icon fa fa-twitter"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="facebook" href="/" target="_blank">
+                        <i class="icon fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="google-plus" href="/" target="_blank">
+                        <i class="icon fa fa-google-plus"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="github" href="https://github.com/ppoffice/hexo-theme-hueman" target="_blank">
+                        <i class="icon fa fa-github"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="weibo" href="/" target="_blank">
+                        <i class="icon fa fa-weibo"></i>
+                    </a>
+                </li>
+                
+            
+                
+                <li>
+                    <a class="social-tooltip" title="rss" href="/" target="_blank">
+                        <i class="icon fa fa-rss"></i>
+                    </a>
+                </li>
+                
+            
+        </ul>
+    </div>
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/2017/06/27/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+        <strong class="article-nav-caption">上一篇</strong>
+        <p class="article-nav-title">Hello World</p>
+        <i class="icon fa fa-chevron-left" id="icon-chevron-left"></i>
+        </a>
+    
+</nav>
+
+    
+    <div class="widgets-container">
+        
+            
+                
+    <div class="widget-wrap">
+        <h3 class="widget-title">最新文章</h3>
+        <div class="widget">
+            <ul id="recent-post" class="">
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/06/27/my-new-post/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/blog/">blog</a></p>
+                            <p class="item-title"><a href="/2017/06/27/my-new-post/" class="title">我的第一篇博客</a></p>
+                            <p class="item-date"><time datetime="2017-06-27T14:42:11.000Z" itemprop="datePublished">2017-06-27</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2017/06/27/hello-world/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2017/06/27/hello-world/" class="title">Hello World</a></p>
+                            <p class="item-date"><time datetime="2017-06-27T12:29:23.467Z" itemprop="datePublished">2017-06-27</time></p>
+                        </div>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">分类</h3>
+        <div class="widget">
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">归档</h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">六月 2017</a><span class="archive-list-count">2</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">标签</h3>
+        <div class="widget">
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客-总结/">博客 总结</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-float">
+        <h3 class="widget-title">标签云</h3>
+        <div class="widget tagcloud">
+            <a href="/tags/博客-总结/" style="font-size: 10px;">博客 总结</a>
+        </div>
+    </div>
+
+
+            
+                
+    <div class="widget-wrap widget-list">
+        <h3 class="widget-title">链接</h3>
+        <div class="widget">
+            <ul>
+                
+                    <li>
+                        <a href="http://hexo.io">Hexo</a>
+                    </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+            
+        
+    </div>
+</aside>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+    <div class="container">
+        <div class="container-inner">
+            <a id="back-to-top" href="javascript:;"><i class="icon fa fa-angle-up"></i></a>
+            <div class="credit">
+                <h1 class="logo-wrap">
+                    <a href="/" class="logo"></a>
+                </h1>
+                <p>&copy; 2017 kala</p>
+                <p>Powered by <a href="//hexo.io/" target="_blank">Hexo</a>. Theme by <a href="//github.com/ppoffice" target="_blank">PPOffice</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+        
+    
+    <script>
+    var disqus_shortname = 'hexo-theme-hueman';
+    
+    
+    var disqus_url = 'https://github.com/liuxuerong/liuxuerong.github.io/2017/06/27/my-new-post/';
+    
+    (function() {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+    </script>
+
+
+
+
+    
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
+    
+    
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+    
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
+</html>
